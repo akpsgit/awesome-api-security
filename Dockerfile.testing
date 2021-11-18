@@ -71,8 +71,13 @@ RUN python3 -m pip install --upgrade pipenv && \
 # STEPS FOR TESTING                                   #
 # 1. change 'tool-name' and 'installation commands';  #
 # 2. remove the symbols < and >                       #
-# 3. uncomment ENV and RUn lines                      #
+# 3. uncomment ENV and RUN lines                      #
 # 4. build the image                                  #
 #######################################################
-# ENV TOOL_XYZ="tool-to-test"
+# ENV TOOL_NAME="tool-to-test"
 # RUN <add installation commands here>
+
+
+# Mark as added once this change is accepted
+ENV TOOL_NAME="ciphey"
+RUN python3 -m pip install --user --upgrade ciphey
